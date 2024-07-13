@@ -26,4 +26,6 @@ window.onload = function() {
             // reproPlay.classList.add("pause")
         }
     })
+
+    //Author Lala || ShatteredDoll
 };
