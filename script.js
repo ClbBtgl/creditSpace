@@ -21,8 +21,7 @@ window.onload = function() {
                 // Actualizar el contador cada segundo
                 let countdownInterval = setInterval(() => {
                     remainingTime--;
-                    console.log(`Tiempo restante: ${remainingTime} segundos`);
-                    if (remainingTime == 33) {
+                    if (remainingTime == 37) {
                         showData()
                     }
 
