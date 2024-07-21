@@ -182,6 +182,10 @@ body {
     display: none !important;
 }
 
+.show-page-main {
+    display: block !important;
+}
+
 .visibility-hidden {
     visibility: hidden;
 }
@@ -200,4 +204,105 @@ iframe {
     height: -webkit-fill-available;
     left: 0rem;
     margin-top: -2rem;
+}
+
+.fade-in-content {
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+    position: absolute;
+    top: 26vh;
+    width: 90vh;
+}
+
+.fiends {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding-bottom: 1.5rem;
+}
+
+.friends,
+.data {
+    padding-left: 1rem;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.heading {
+    font-family: MS Gothic !important;
+    padding: 8px 15px;
+    border: 1px solid #fff;
+    box-shadow: 5px 5px rgba(255, 255, 255, 0.1);
+}
+
+.heading::after {
+    font-family: MS Gothic !important;
+    content: "[ _ ][ o ][ x ]";
+    float: right;
+    font-size: 12px;
+}
+
+.inner {
+    font-family: MS Gothic !important;
+    font-size: 12px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border: 1px solid #fff;
+    border-top: none;
+    box-shadow: 5px 5px rgba(255, 255, 255, 0.1);
+    line-height: 1.5;
+}
+
+.sign {
+    margin-top: 8px;
+    padding: 10px 15px;
+    border: 1px solid #fff;
+    height: 281px;
+    max-height: 300px;
 }

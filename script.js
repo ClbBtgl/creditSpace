@@ -1,6 +1,7 @@
 window.onload = function() {
     let credits = document.querySelector('.credits');
-    let duration = 3.5 * 60 * 1000; // 4.5 minutos en milisegundos
+    let duration = 3.0 * 60 * 1000; // 4.5 minutos en milisegundos
+    let remainingTime = duration / 1000; // tiempo restante en segundos
     const backgroundMusic = document.getElementById('backgroundMusic');
     const container = document.getElementById('space');
     const iframe = document.getElementById('iframeIntroActive');
@@ -14,10 +15,18 @@ window.onload = function() {
                 credits.style.transition = `transform ${duration}ms linear`;
                 credits.style.transform = 'translateY(-100%)';
                 backgroundMusic.play();
-
                 setTimeout(() => {
                     credits.style.display = 'none';
                 }, duration);
+                // Actualizar el contador cada segundo
+                let countdownInterval = setInterval(() => {
+                    remainingTime--;
+                    console.log(`Tiempo restante: ${remainingTime} segundos`);
+                    if (remainingTime == 33) {
+                        showData()
+                    }
+
+                }, 1000);
 
             }, 500);
 
@@ -26,6 +35,14 @@ window.onload = function() {
             // reproPlay.classList.add("pause")
         }
     })
+
+
+    function showData() {
+        const data = document.getElementById('showData');
+        data.classList.remove("hidden-page")
+        data.classList.add("show-page-main")
+    }
+
 
     //Author Lala || ShatteredDoll
 };
