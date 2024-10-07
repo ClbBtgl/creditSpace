@@ -1,6 +1,6 @@
 window.onload = function() {
     let credits = document.querySelector('.credits');
-    let duration = 3.0 * 60 * 1000; // 4.5 minutos en milisegundos
+    let duration = (3 * 60 * 1000) + (30 * 1000); // 3 minutos y 30 segundos en milisegundos 
     let remainingTime = duration / 1000; // tiempo restante en segundos
     const backgroundMusic = document.getElementById('backgroundMusic');
     const container = document.getElementById('space');
